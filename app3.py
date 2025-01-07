@@ -21,8 +21,9 @@ def select_articles():
     articles = get_unpublished_articles(DB_FILE)
 
     # In dữ liệu ra để debug
-    #for article in articles:
-    #    print(dict(article))
+    # Xem thử dữ liệu có chính xác không
+    for article in articles:
+        print(article)
 
     conn.close()
     return render_template('select_articles.html', articles=articles)
@@ -153,20 +154,25 @@ def publish_articles():
 
     return "Các bài viết đã được xuất bản thành công!"
 
-def get_unpublished_articles(DB_FILE):
+def get_unpublished_articles(DB_FILE): 
     conn = sqlite3.connect(DB_FILE)
     conn.row_factory = sqlite3.Row
     cursor = conn.cursor()
 
-    cursor.execute("SELECT id, title, url, summary, predict, some_number_field FROM articles WHERE is_published = 0")
+    cursor.execute("SELECT id, title, url, summary, Predict FROM articles WHERE is_published = 0")
     rows = cursor.fetchall()
 
     articles = []
     for row in rows:
         article = dict(row)
-        # Định dạng predict với 2 chữ số thập phân
-        if 'predict' in article and article['predict'] is not None:
-            article['predict'] = round(float(article['predict']), 2)
+        
+        # Kiểm tra và xử lý trường 'predict' (nếu cần)
+        if article['Predict']:
+            article['Predict'] = article['Predict'].strip()  # Loại bỏ khoảng trắng thừa
+        
+        # In ra giá trị để debug
+        print(f"Article Title: {article['title']}, Predict: {article['Predict']}")  # Xem thông tin đã được truyền vào đúng chưa
+
         articles.append(article)
 
     conn.close()
