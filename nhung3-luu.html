@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tấm Lòng Nhân Ái</title>
+<style>
+        body {
+            font-family: sans-serif;
+            margin: 20;
+            line-height: 1;
+            font-size: 1em; /* Kích thước font chữ mặc định cho body */
+        }
+
+        header {
+            background-color: #0fad6c;
+            padding: 10px;
+            text-align: center;
+        }
+        header h1 { /* Định dạng riêng cho thẻ h1 trong header */
+            font-size: 3em; /* Kích thước chữ lớn hơn cho tiêu đề header (3 lần kích thước font body) */
+            padding: 10px;
+            color: rgb(226, 247, 46);
+        }
+        header h2 { /* Định dạng riêng cho thẻ h1 trong header */
+            font-size: 2em; /* Kích thước chữ lớn hơn cho tiêu đề header (2 lần kích thước font body) */
+            padding: 30px;
+            color: rgb(226, 247, 46);
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr; /* 2 cột bên trái và 1 cột bên phải */
+            grid-gap: 10px;
+            padding: 10px;
+        }
+
+        .left-columns {
+            display: grid;
+            grid-template-columns: 2fr 2fr; /* Chia cột trái thành 2 cột */
+            grid-gap: 40px;
+        }
+
+        .right-column {
+            background-color: #f8f8f8;
+            padding: 40px;
+            border: 5px solid #ddd;
+        }
+
+        .item { /* Kiểu dáng chung cho cả trường hợp và nhà tài trợ */
+            border: 1px solid #ccc;
+            overflow: hidden;
+            margin-bottom: 2cm;
+            line-height: 1.5;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .item:hover {
+            transform: scale(1.00);
+            box-shadow: 0 4px 4px rgba(0,0,0,.2);
+            line-height: 1.5
+        }
+
+        .item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .item a { /* Kiểu dáng cho link (áp dụng cho cả tiêu đề trường hợp và nhà tài trợ) */
+            display: block;
+            padding: 10px;
+            text-align: center;
+            background-color: rgba(63, 7, 218, 0.7);
+            color: rgb(226, 247, 46);
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            font-size: 1.2em;
+        }
+
+        .item:hover a {
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 2em
+        }
+    </style>
+</head>
+<body>
+<header>
+<h1>Tấm Lòng Nhân Ái</h1>
+</header>
+<div class="container">
+<div class="left-columns">
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/hon-140-trieu-dong-den-voi-nguoi-dan-ba-di-cay-lua-thue-bi-tai-nan-20241216093338091.htm">
+<img alt="Ảnh 1" src="https://cdnphoto.dantri.com.vn/vMHS9pXKJ8ccGiwtrKEje7ofxOk=/2024/12/16/1000108061-edited-1734315582596.jpeg"/>
+<a href="#">Hơn 140 triệu đồng đến với người đàn bà đi cấy lúa thuê bị tai nạn</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/ban-doc-bao-dan-tri-giup-do-hoan-canh-chong-muon-nha-lam-le-tang-cho-vo-20241219091814215.htm">
+<img alt="Ảnh 2" src="https://cdnphoto.dantri.com.vn/BVw1XgYpK99hB1ijziUqJE6m8ns=/thumb_w/1020/2024/12/19/img6885-1734574460222.jpg?watermark=true"/>
+<a href="#">Bạn đọc báo Dân trí giúp đỡ hoàn cảnh chồng mượn nhà làm lễ tang cho vợ</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/tham-hoa-lang-nu-ca-thon-bi-xoa-so-hay-chung-tay-gop-suc-xay-lai-mai-am-240502.htm">
+<img alt="Ảnh 3" src="https://cdnphoto.dantri.com.vn/apih1miltTyTpRBx5JrjRc3ins0=/zoom/1152_768/2024/09/11/anh-thoi-crop-1726028448274-1726041671298.jpeg"/>
+<a href="#">Thảm họa Làng Nủ: Cả thôn bị xóa sổ - Hãy chung tay góp sức xây lại mái ấm!</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/hon-140-trieu-dong-den-voi-nguoi-dan-ba-di-cay-lua-thue-bi-tai-nan-20241216093338091.htm">
+<img alt="Ảnh 1" src="https://cdnphoto.dantri.com.vn/vMHS9pXKJ8ccGiwtrKEje7ofxOk=/2024/12/16/1000108061-edited-1734315582596.jpeg"/>
+<a href="#">Hơn 140 triệu đồng...</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/ban-doc-bao-dan-tri-giup-do-hoan-canh-chong-muon-nha-lam-le-tang-cho-vo-20241219091814215.htm">
+<img alt="Ảnh 2" src="https://cdnphoto.dantri.com.vn/BVw1XgYpK99hB1ijziUqJE6m8ns=/thumb_w/1020/2024/12/19/img6885-1734574460222.jpg?watermark=true"/>
+<a href="#">Chồng muốn nhà...</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/tham-hoa-lang-nu-ca-thon-bi-xoa-so-hay-chung-tay-gop-suc-xay-lai-mai-am-240502.htm">
+<img alt="Ảnh 3" src="https://cdnphoto.dantri.com.vn/apih1miltTyTpRBx5JrjRc3ins0=/zoom/1152_768/2024/09/11/anh-thoi-crop-1726028448274-1726041671298.jpeg"/>
+<a href="#">Thảm họa làng...</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/nhoi-long-vo-1-nach-2-con-mon-xoay-xo-cham-chong-liet-tu-chi-20241214001517873.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/nhoi-long-vo-1-nach-2-con-mon-xoay-xo-cham-chong-liet-tu-chi-20241214001517873.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/nhoi-long-vo-1-nach-2-con-mon-xoay-xo-cham-chong-liet-tu-chi-20241214001517873.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/xot-thuong-canh-nguoi-vo-ngheo-bat-luc-xin-tung-ly-sua-cuu-chong-20241218173454569.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/xot-thuong-canh-nguoi-vo-ngheo-bat-luc-xin-tung-ly-sua-cuu-chong-20241218173454569.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/xot-thuong-canh-nguoi-vo-ngheo-bat-luc-xin-tung-ly-sua-cuu-chong-20241218173454569.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/nguoi-me-truoc-khi-chet-mong-duoc-thay-con-gai-tu-cham-soc-minh-20241212110141339.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/nguoi-me-truoc-khi-chet-mong-duoc-thay-con-gai-tu-cham-soc-minh-20241212110141339.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/nguoi-me-truoc-khi-chet-mong-duoc-thay-con-gai-tu-cham-soc-minh-20241212110141339.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/goa-phu-ngheo-gong-ganh-3-con-va-bo-me-chong-cuoc-doi-nhoc-nhan-don-dau-20241221235905944.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/goa-phu-ngheo-gong-ganh-3-con-va-bo-me-chong-cuoc-doi-nhoc-nhan-don-dau-20241221235905944.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/goa-phu-ngheo-gong-ganh-3-con-va-bo-me-chong-cuoc-doi-nhoc-nhan-don-dau-20241221235905944.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/nguoi-vo-ngheo-anh-song-ngay-nao-4-me-con-em-con-co-bong-de-dua-20241222161212237.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/nguoi-vo-ngheo-anh-song-ngay-nao-4-me-con-em-con-co-bong-de-dua-20241222161212237.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/nguoi-vo-ngheo-anh-song-ngay-nao-4-me-con-em-con-co-bong-de-dua-20241222161212237.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/trao-hon-225-trieu-dong-ban-doc-giup-do-cau-be-mo-coi-mang-trong-benh-20241227202917509.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/trao-hon-225-trieu-dong-ban-doc-giup-do-cau-be-mo-coi-mang-trong-benh-20241227202917509.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/trao-hon-225-trieu-dong-ban-doc-giup-do-cau-be-mo-coi-mang-trong-benh-20241227202917509.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/nguoi-phu-nu-bi-chong-danh-nam-liet-giuong-duoc-giup-do-hon-186-trieu-dong-20241227165306715.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/nguoi-phu-nu-bi-chong-danh-nam-liet-giuong-duoc-giup-do-hon-186-trieu-dong-20241227165306715.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/nguoi-phu-nu-bi-chong-danh-nam-liet-giuong-duoc-giup-do-hon-186-trieu-dong-20241227165306715.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/khanh-thanh-nha-nhan-ai-danh-tang-ba-lao-co-doc-mu-loa-tai-bac-giang-20241227181858063.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/khanh-thanh-nha-nhan-ai-danh-tang-ba-lao-co-doc-mu-loa-tai-bac-giang-20241227181858063.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/khanh-thanh-nha-nhan-ai-danh-tang-ba-lao-co-doc-mu-loa-tai-bac-giang-20241227181858063.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/2-chi-em-mo-coi-tai-bac-giang-don-nhan-tam-long-ban-doc-ngay-sat-tet-20241227123834912.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/2-chi-em-mo-coi-tai-bac-giang-don-nhan-tam-long-ban-doc-ngay-sat-tet-20241227123834912.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/2-chi-em-mo-coi-tai-bac-giang-don-nhan-tam-long-ban-doc-ngay-sat-tet-20241227123834912.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/nam-sinh-lop-10-mac-ung-thu-khat-khao-duoc-song-de-toi-truong-di-hoc-20241219112751279.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/nam-sinh-lop-10-mac-ung-thu-khat-khao-duoc-song-de-toi-truong-di-hoc-20241219112751279.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/nam-sinh-lop-10-mac-ung-thu-khat-khao-duoc-song-de-toi-truong-di-hoc-20241219112751279.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/nguoi-phu-nu-ung-thu-giai-doan-cuoi-da-qua-doi-2-con-mo-coi-cha-me-20241226111616397.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/nguoi-phu-nu-ung-thu-giai-doan-cuoi-da-qua-doi-2-con-mo-coi-cha-me-20241226111616397.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/nguoi-phu-nu-ung-thu-giai-doan-cuoi-da-qua-doi-2-con-mo-coi-cha-me-20241226111616397.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/goa-phu-ngheo-gong-ganh-3-con-va-bo-me-chong-cuoc-doi-nhoc-nhan-don-dau-20241221235905944.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/goa-phu-ngheo-gong-ganh-3-con-va-bo-me-chong-cuoc-doi-nhoc-nhan-don-dau-20241221235905944.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/goa-phu-ngheo-gong-ganh-3-con-va-bo-me-chong-cuoc-doi-nhoc-nhan-don-dau-20241221235905944.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/goa-phu-ngheo-khon-cung-nuoi-3-con-tam-than-me-gia-om-yeu-20241213160402877.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/goa-phu-ngheo-khon-cung-nuoi-3-con-tam-than-me-gia-om-yeu-20241213160402877.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/goa-phu-ngheo-khon-cung-nuoi-3-con-tam-than-me-gia-om-yeu-20241213160402877.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/hoan-canh.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/hoan-canh.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/hoan-canh.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/hoan-canh.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/hoan-canh.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/hoan-canh.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/nam-sinh-lop-10-mac-ung-thu-mau-con-muon-song-duoc-quay-lai-truong-5429.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/nam-sinh-lop-10-mac-ung-thu-mau-con-muon-song-duoc-quay-lai-truong-5429.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/nam-sinh-lop-10-mac-ung-thu-mau-con-muon-song-duoc-quay-lai-truong-5429.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/goa-phu-ngheo-gong-ganh-3-con-va-bo-me-chong-cuoc-doi-nhoc-nhan-don-dau-5428.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/goa-phu-ngheo-gong-ganh-3-con-va-bo-me-chong-cuoc-doi-nhoc-nhan-don-dau-5428.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/goa-phu-ngheo-gong-ganh-3-con-va-bo-me-chong-cuoc-doi-nhoc-nhan-don-dau-5428.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/khon-cung-goa-phu-ngheo-nuoi-3-con-tam-than-me-gia-om-yeu-5427.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/khon-cung-goa-phu-ngheo-nuoi-3-con-tam-than-me-gia-om-yeu-5427.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/khon-cung-goa-phu-ngheo-nuoi-3-con-tam-than-me-gia-om-yeu-5427.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/du-an-cong-dong.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/du-an-cong-dong.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/du-an-cong-dong.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/bo-me-gia-yeu-gang-guong-xin-tung-bua-an-cho-con-gai-ung-thu-20241226143631235.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/bo-me-gia-yeu-gang-guong-xin-tung-bua-an-cho-con-gai-ung-thu-20241226143631235.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/bo-me-gia-yeu-gang-guong-xin-tung-bua-an-cho-con-gai-ung-thu-20241226143631235.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/nguoi-vo-ngheo-anh-song-ngay-nao-4-me-con-em-con-co-bong-de-dua-20241222161212237.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/nguoi-vo-ngheo-anh-song-ngay-nao-4-me-con-em-con-co-bong-de-dua-20241222161212237.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/nguoi-vo-ngheo-anh-song-ngay-nao-4-me-con-em-con-co-bong-de-dua-20241222161212237.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/trao-hon-225-trieu-dong-ban-doc-giup-do-cau-be-mo-coi-mang-trong-benh-20241227202917509.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/trao-hon-225-trieu-dong-ban-doc-giup-do-cau-be-mo-coi-mang-trong-benh-20241227202917509.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/trao-hon-225-trieu-dong-ban-doc-giup-do-cau-be-mo-coi-mang-trong-benh-20241227202917509.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/nguoi-phu-nu-bi-chong-danh-nam-liet-giuong-duoc-giup-do-hon-186-trieu-dong-20241227165306715.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/nguoi-phu-nu-bi-chong-danh-nam-liet-giuong-duoc-giup-do-hon-186-trieu-dong-20241227165306715.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/nguoi-phu-nu-bi-chong-danh-nam-liet-giuong-duoc-giup-do-hon-186-trieu-dong-20241227165306715.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/khanh-thanh-nha-nhan-ai-danh-tang-ba-lao-co-doc-mu-loa-tai-bac-giang-20241227181858063.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/khanh-thanh-nha-nhan-ai-danh-tang-ba-lao-co-doc-mu-loa-tai-bac-giang-20241227181858063.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/khanh-thanh-nha-nhan-ai-danh-tang-ba-lao-co-doc-mu-loa-tai-bac-giang-20241227181858063.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/2-chi-em-mo-coi-tai-bac-giang-don-nhan-tam-long-ban-doc-ngay-sat-tet-20241227123834912.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/2-chi-em-mo-coi-tai-bac-giang-don-nhan-tam-long-ban-doc-ngay-sat-tet-20241227123834912.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/2-chi-em-mo-coi-tai-bac-giang-don-nhan-tam-long-ban-doc-ngay-sat-tet-20241227123834912.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/nam-sinh-lop-10-mac-ung-thu-khat-khao-duoc-song-de-toi-truong-di-hoc-20241219112751279.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/nam-sinh-lop-10-mac-ung-thu-khat-khao-duoc-song-de-toi-truong-di-hoc-20241219112751279.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/nam-sinh-lop-10-mac-ung-thu-khat-khao-duoc-song-de-toi-truong-di-hoc-20241219112751279.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/bo-me-gia-yeu-gang-guong-xin-tung-bua-an-cho-con-gai-ung-thu-20241226143631235.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/bo-me-gia-yeu-gang-guong-xin-tung-bua-an-cho-con-gai-ung-thu-20241226143631235.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/bo-me-gia-yeu-gang-guong-xin-tung-bua-an-cho-con-gai-ung-thu-20241226143631235.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/nguoi-vo-ngheo-anh-song-ngay-nao-4-me-con-em-con-co-bong-de-dua-20241222161212237.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/nguoi-vo-ngheo-anh-song-ngay-nao-4-me-con-em-con-co-bong-de-dua-20241222161212237.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/nguoi-vo-ngheo-anh-song-ngay-nao-4-me-con-em-con-co-bong-de-dua-20241222161212237.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/trao-hon-225-trieu-dong-ban-doc-giup-do-cau-be-mo-coi-mang-trong-benh-20241227202917509.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/trao-hon-225-trieu-dong-ban-doc-giup-do-cau-be-mo-coi-mang-trong-benh-20241227202917509.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/trao-hon-225-trieu-dong-ban-doc-giup-do-cau-be-mo-coi-mang-trong-benh-20241227202917509.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/nguoi-phu-nu-bi-chong-danh-nam-liet-giuong-duoc-giup-do-hon-186-trieu-dong-20241227165306715.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/nguoi-phu-nu-bi-chong-danh-nam-liet-giuong-duoc-giup-do-hon-186-trieu-dong-20241227165306715.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/nguoi-phu-nu-bi-chong-danh-nam-liet-giuong-duoc-giup-do-hon-186-trieu-dong-20241227165306715.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/khanh-thanh-nha-nhan-ai-danh-tang-ba-lao-co-doc-mu-loa-tai-bac-giang-20241227181858063.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/khanh-thanh-nha-nhan-ai-danh-tang-ba-lao-co-doc-mu-loa-tai-bac-giang-20241227181858063.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/khanh-thanh-nha-nhan-ai-danh-tang-ba-lao-co-doc-mu-loa-tai-bac-giang-20241227181858063.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/2-chi-em-mo-coi-tai-bac-giang-don-nhan-tam-long-ban-doc-ngay-sat-tet-20241227123834912.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/2-chi-em-mo-coi-tai-bac-giang-don-nhan-tam-long-ban-doc-ngay-sat-tet-20241227123834912.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/2-chi-em-mo-coi-tai-bac-giang-don-nhan-tam-long-ban-doc-ngay-sat-tet-20241227123834912.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/nam-sinh-lop-10-mac-ung-thu-khat-khao-duoc-song-de-toi-truong-di-hoc-20241219112751279.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/nam-sinh-lop-10-mac-ung-thu-khat-khao-duoc-song-de-toi-truong-di-hoc-20241219112751279.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/nam-sinh-lop-10-mac-ung-thu-khat-khao-duoc-song-de-toi-truong-di-hoc-20241219112751279.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/nguoi-phu-nu-ung-thu-giai-doan-cuoi-da-qua-doi-2-con-mo-coi-cha-me-20241226111616397.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/nguoi-phu-nu-ung-thu-giai-doan-cuoi-da-qua-doi-2-con-mo-coi-cha-me-20241226111616397.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/nguoi-phu-nu-ung-thu-giai-doan-cuoi-da-qua-doi-2-con-mo-coi-cha-me-20241226111616397.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/goa-phu-ngheo-gong-ganh-3-con-va-bo-me-chong-cuoc-doi-nhoc-nhan-don-dau-20241221235905944.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/goa-phu-ngheo-gong-ganh-3-con-va-bo-me-chong-cuoc-doi-nhoc-nhan-don-dau-20241221235905944.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/goa-phu-ngheo-gong-ganh-3-con-va-bo-me-chong-cuoc-doi-nhoc-nhan-don-dau-20241221235905944.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/bo-me-gia-yeu-gang-guong-xin-tung-bua-an-cho-con-gai-ung-thu-20241226143631235.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/bo-me-gia-yeu-gang-guong-xin-tung-bua-an-cho-con-gai-ung-thu-20241226143631235.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/bo-me-gia-yeu-gang-guong-xin-tung-bua-an-cho-con-gai-ung-thu-20241226143631235.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/trao-tang-hon-441-trieu-dong-toi-4-gia-dinh-dac-biet-kho-khan-o-lang-son-20241229143956516.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/trao-tang-hon-441-trieu-dong-toi-4-gia-dinh-dac-biet-kho-khan-o-lang-son-20241229143956516.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/trao-tang-hon-441-trieu-dong-toi-4-gia-dinh-dac-biet-kho-khan-o-lang-son-20241229143956516.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/bo-me-gia-yeu-gang-guong-xin-tung-bua-an-cho-con-gai-ung-thu-20241226143631235.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/bo-me-gia-yeu-gang-guong-xin-tung-bua-an-cho-con-gai-ung-thu-20241226143631235.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/bo-me-gia-yeu-gang-guong-xin-tung-bua-an-cho-con-gai-ung-thu-20241226143631235.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/trao-tang-hon-441-trieu-dong-toi-4-gia-dinh-dac-biet-kho-khan-o-lang-son-20241229143956516.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/trao-tang-hon-441-trieu-dong-toi-4-gia-dinh-dac-biet-kho-khan-o-lang-son-20241229143956516.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/trao-tang-hon-441-trieu-dong-toi-4-gia-dinh-dac-biet-kho-khan-o-lang-son-20241229143956516.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/nguoi-phu-nu-hon-me-sau-tai-nan-nghiem-trong-da-dau-hang-so-phan-20241229200425535.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/nguoi-phu-nu-hon-me-sau-tai-nan-nghiem-trong-da-dau-hang-so-phan-20241229200425535.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/nguoi-phu-nu-hon-me-sau-tai-nan-nghiem-trong-da-dau-hang-so-phan-20241229200425535.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/nguoi-vo-ngheo-anh-song-ngay-nao-4-me-con-em-con-co-bong-de-dua-20241222161212237.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/nguoi-vo-ngheo-anh-song-ngay-nao-4-me-con-em-con-co-bong-de-dua-20241222161212237.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/nguoi-vo-ngheo-anh-song-ngay-nao-4-me-con-em-con-co-bong-de-dua-20241222161212237.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/trao-hon-225-trieu-dong-ban-doc-giup-do-cau-be-mo-coi-mang-trong-benh-20241227202917509.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/trao-hon-225-trieu-dong-ban-doc-giup-do-cau-be-mo-coi-mang-trong-benh-20241227202917509.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/trao-hon-225-trieu-dong-ban-doc-giup-do-cau-be-mo-coi-mang-trong-benh-20241227202917509.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/nguoi-phu-nu-bi-chong-danh-nam-liet-giuong-duoc-giup-do-hon-186-trieu-dong-20241227165306715.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/nguoi-phu-nu-bi-chong-danh-nam-liet-giuong-duoc-giup-do-hon-186-trieu-dong-20241227165306715.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/nguoi-phu-nu-bi-chong-danh-nam-liet-giuong-duoc-giup-do-hon-186-trieu-dong-20241227165306715.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/khanh-thanh-nha-nhan-ai-danh-tang-ba-lao-co-doc-mu-loa-tai-bac-giang-20241227181858063.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/khanh-thanh-nha-nhan-ai-danh-tang-ba-lao-co-doc-mu-loa-tai-bac-giang-20241227181858063.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/khanh-thanh-nha-nhan-ai-danh-tang-ba-lao-co-doc-mu-loa-tai-bac-giang-20241227181858063.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/2-chi-em-mo-coi-tai-bac-giang-don-nhan-tam-long-ban-doc-ngay-sat-tet-20241227123834912.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/2-chi-em-mo-coi-tai-bac-giang-don-nhan-tam-long-ban-doc-ngay-sat-tet-20241227123834912.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/2-chi-em-mo-coi-tai-bac-giang-don-nhan-tam-long-ban-doc-ngay-sat-tet-20241227123834912.htm</a>
+</div>
+
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/nam-sinh-lop-10-mac-ung-thu-khat-khao-duoc-song-de-toi-truong-di-hoc-20241219112751279.htm">
+<a href="https://dantri.com.vn/tam-long-nhan-ai/nam-sinh-lop-10-mac-ung-thu-khat-khao-duoc-song-de-toi-truong-di-hoc-20241219112751279.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/nam-sinh-lop-10-mac-ung-thu-khat-khao-duoc-song-de-toi-truong-di-hoc-20241219112751279.htm</a>
+</div>
+</div>
+<div class="right-column">
+<h2>Nhà Tài Trợ</h2>
+<div class="item" src="images\236.png">
+<a href="#">Nhà tài trợ 236- Hùng Vương- TP Kon Tum</a>
+</div>
+<div class="item"> src="images\sen.png"&gt;
+        <a href="#">Công ty TNHH Bê Tông và xây lắp công nghiệp Kon Tum</a>
+</div>
+</div>
+</div>
+<footer>
+    © 2024 Tấm Lòng Nhân Ái
+</footer>
+<script>
+        const items = document.querySelectorAll('.item');
+        items.forEach(item => {
+            item.addEventListener('click', () => {
+                const url = item.dataset.url;
+                window.open(url, '_blank');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tấm Lòng Nhân Ái</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            line-height: 1.8; /* Tăng khoảng cách dòng cho toàn bộ body */
+            font-size: 16px; /* Kích thước font chữ mặc định cho body */
+        }
+
+        header {
+            background-color: #f0f0f0;
+            padding: 30px; /* Tăng padding cho header */
+            text-align: center;
+        }
+
+        header h1 { /* Định dạng riêng cho thẻ h1 trong header */
+            font-size: 3em; /* Kích thước chữ lớn hơn cho tiêu đề header (3 lần kích thước font body) */
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-gap: 20px;
+            padding: 20px;
+        }
+
+        .left-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+        }
+
+        .right-column {
+            background-color: #f8f8f8;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        .item {
+            border: 1px solid #ccc;
+            overflow: hidden;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0,0,0,.2);
+        }
+
+        .item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .item a {
+            display: block;
+            padding: 15px; /* Tăng padding cho tiêu đề item */
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            font-size: 1.2em; /* Kích thước chữ lớn hơn cho tiêu đề item */
+        }
+
+        .item:hover a {
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px; /* Tăng padding cho footer */
+            font-size: 1.2em; /* Kích thước chữ lớn hơn cho footer */
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tấm Lòng Nhân Ái</h1>
+    </header>
+    <div class="container">
+        <div class="left-columns">
+            </div>
+        <div class="right-column">
+            </div>
+    </div>
+    <footer>
+        &copy; 2024 Tấm Lòng Nhân Ái
+    </footer>
+
+    <script>
+        // ... (JavaScript) ...
+    </script>
+</body>
+</html>

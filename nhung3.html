@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tấm Lòng Nhân Ái</title>
+<style>
+        body {
+            font-family: sans-serif;
+            margin: 20;
+            line-height: 1;
+            font-size: 1em; /* Kích thước font chữ mặc định cho body */
+        }
+
+        header {
+            background-color: #0fad6c;
+            padding: 10px;
+            text-align: center;
+        }
+        header h1 { /* Định dạng riêng cho thẻ h1 trong header */
+            font-size: 3em; /* Kích thước chữ lớn hơn cho tiêu đề header (3 lần kích thước font body) */
+            padding: 10px;
+            color: rgb(226, 247, 46);
+        }
+        header h2 { /* Định dạng riêng cho thẻ h1 trong header */
+            font-size: 2em; /* Kích thước chữ lớn hơn cho tiêu đề header (2 lần kích thước font body) */
+            padding: 30px;
+            color: rgb(226, 247, 46);
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr; /* 2 cột bên trái và 1 cột bên phải */
+            grid-gap: 10px;
+            padding: 10px;
+        }
+
+        .left-columns {
+            display: grid;
+            grid-template-columns: 2fr 2fr; /* Chia cột trái thành 2 cột */
+            grid-gap: 40px;
+        }
+
+        .right-column {
+            background-color: #f8f8f8;
+            padding: 40px;
+            border: 5px solid #ddd;
+        }
+
+        .item { /* Kiểu dáng chung cho cả trường hợp và nhà tài trợ */
+            border: 1px solid #ccc;
+            overflow: hidden;
+            margin-bottom: 2cm;
+            line-height: 1.5;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .item:hover {
+            transform: scale(1.00);
+            box-shadow: 0 4px 4px rgba(0,0,0,.2);
+            line-height: 1.5
+        }
+
+        .item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .item a { /* Kiểu dáng cho link (áp dụng cho cả tiêu đề trường hợp và nhà tài trợ) */
+            display: block;
+            padding: 10px;
+            text-align: center;
+            background-color: rgba(63, 7, 218, 0.7);
+            color: rgb(226, 247, 46);
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            font-size: 1.2em;
+        }
+
+        .item:hover a {
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        footer {
+            background-color: #f5df1a;
+            color: rgb(8, 10, 119);
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 1.5em
+        }
+    </style>
+</head>
+<body>
+<header>
+<h1>Tấm Lòng Nhân Ái</h1>
+</header>
+<div class="container">
+<div class="left-columns">
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/hon-140-trieu-dong-den-voi-nguoi-dan-ba-di-cay-lua-thue-bi-tai-nan-20241216093338091.htm">
+<img alt="Ảnh 1" src="https://cdnphoto.dantri.com.vn/vMHS9pXKJ8ccGiwtrKEje7ofxOk=/2024/12/16/1000108061-edited-1734315582596.jpeg"/>
+<a href="#">Hơn 140 triệu đồng đến với người đàn bà đi cấy lúa thuê bị tai nạn</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/ban-doc-bao-dan-tri-giup-do-hoan-canh-chong-muon-nha-lam-le-tang-cho-vo-20241219091814215.htm">
+<img alt="Ảnh 2" src="https://cdnphoto.dantri.com.vn/BVw1XgYpK99hB1ijziUqJE6m8ns=/thumb_w/1020/2024/12/19/img6885-1734574460222.jpg?watermark=true"/>
+<a href="#">Bạn đọc báo Dân trí giúp đỡ hoàn cảnh chồng mượn nhà làm lễ tang cho vợ</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/tham-hoa-lang-nu-ca-thon-bi-xoa-so-hay-chung-tay-gop-suc-xay-lai-mai-am-240502.htm">
+<img alt="Ảnh 3" src="https://cdnphoto.dantri.com.vn/apih1miltTyTpRBx5JrjRc3ins0=/zoom/1152_768/2024/09/11/anh-thoi-crop-1726028448274-1726041671298.jpeg"/>
+<a href="#">Thảm họa Làng Nủ: Cả thôn bị xóa sổ - Hãy chung tay góp sức xây lại mái ấm!</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/hon-140-trieu-dong-den-voi-nguoi-dan-ba-di-cay-lua-thue-bi-tai-nan-20241216093338091.htm">
+<img alt="Ảnh 1" src="https://cdnphoto.dantri.com.vn/vMHS9pXKJ8ccGiwtrKEje7ofxOk=/2024/12/16/1000108061-edited-1734315582596.jpeg"/>
+<a href="#">Hơn 140 triệu đồng...</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/ban-doc-bao-dan-tri-giup-do-hoan-canh-chong-muon-nha-lam-le-tang-cho-vo-20241219091814215.htm">
+<img alt="Ảnh 2" src="https://cdnphoto.dantri.com.vn/BVw1XgYpK99hB1ijziUqJE6m8ns=/thumb_w/1020/2024/12/19/img6885-1734574460222.jpg?watermark=true"/>
+<a href="#">Chồng muốn nhà...</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/tham-hoa-lang-nu-ca-thon-bi-xoa-so-hay-chung-tay-gop-suc-xay-lai-mai-am-240502.htm">
+<img alt="Ảnh 3" src="https://cdnphoto.dantri.com.vn/apih1miltTyTpRBx5JrjRc3ins0=/zoom/1152_768/2024/09/11/anh-thoi-crop-1726028448274-1726041671298.jpeg"/>
+<a href="#">Thảm họa làng...</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/neu-anh-loi-song-ma-nam-liet-mot-cho-toi-cung-chap-nhan-cham-soc-20250102145148323.htm"><img alt='"Nếu anh Lợi sống mà nằm liệt một chỗ, tôi cũng chấp nhận chăm sóc…"' src="https://cdnphoto.dantri.com.vn/E3q89J1hAQnYAGkjHNoQLZCCUNU=/zoom/1200_630/2025/01/02/collage-crop-crop-1735804191767.jpeg"/><a href="https://dantri.com.vn/tam-long-nhan-ai/neu-anh-loi-song-ma-nam-liet-mot-cho-toi-cung-chap-nhan-cham-soc-20250102145148323.htm" target="_blank">"Nếu anh Lợi sống mà nằm liệt một chỗ, tôi cũng chấp nhận chăm sóc…"</a></div><div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/trao-tang-tan-tay-hoc-sinh-ha-giang-nhung-mon-qua-y-nghia-ngay-can-tet-20250105144104784.htm"><img alt="Trao tặng tận tay học sinh Hà Giang những món quà ý nghĩa ngày cận Tết" src="https://cdnphoto.dantri.com.vn/a_Z5gKufJRGZbJQgGoFH4vg7JFk=/zoom/1200_630/2025/01/05/nxl0890-crop-1736062058484.jpeg"/><a href="https://dantri.com.vn/tam-long-nhan-ai/trao-tang-tan-tay-hoc-sinh-ha-giang-nhung-mon-qua-y-nghia-ngay-can-tet-20250105144104784.htm" target="_blank">Trao tặng tận tay học sinh Hà Giang những món quà ý nghĩa ngày cận Tết</a></div><div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/gan-350-trieu-dong-tiep-suc-nguoi-ba-ban-bo-cuu-chau-ung-thu-20250105125707899.htm"><img alt='Gần 350 triệu đồng "tiếp sức" người bà bán bò cứu cháu ung thư' src="https://cdnphoto.dantri.com.vn/WXJd7JPOE2pnseDrdzav2MdmFXU=/zoom/1200_630/2025/01/05/ung-thu-mau-thanh-hoa-1-crop-1736056471140.jpeg"/><a href="https://dantri.com.vn/tam-long-nhan-ai/gan-350-trieu-dong-tiep-suc-nguoi-ba-ban-bo-cuu-chau-ung-thu-20250105125707899.htm" target="_blank">Gần 350 triệu đồng "tiếp sức" người bà bán bò cứu cháu ung thư</a></div><div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/co-tien-phau-thuat-cho-me-tet-nay-toi-khong-so-bi-doi-no-dau-nam-roi-20250103162738030.htm"><img alt='"Có tiền phẫu thuật cho mẹ, Tết này tôi không sợ bị đòi nợ đầu năm rồi!"' src="https://cdnphoto.dantri.com.vn/pN3-4bYSIM-dJP60fRRmTGdOwpY=/zoom/1200_630/2025/01/03/nguyenthilan2-crop-1735896321157.jpeg"/><a href="https://dantri.com.vn/tam-long-nhan-ai/co-tien-phau-thuat-cho-me-tet-nay-toi-khong-so-bi-doi-no-dau-nam-roi-20250103162738030.htm" target="_blank">"Có tiền phẫu thuật cho mẹ, Tết này tôi không sợ bị đòi nợ đầu năm rồi!"</a></div><div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/vo-chong-khiem-thi-mong-ban-doc-giup-do-be-gai-sinh-non-20250103111843871.htm"><img alt="Vợ chồng khiếm thị mong bạn đọc giúp đỡ bé gái sinh non" src="https://cdnphoto.dantri.com.vn/JuBz9wwh7QqxK9hwJOAVP-G219k=/zoom/1200_630/2025/01/03/capvochongmu2-crop-1735877906869.jpeg"/><a href="https://dantri.com.vn/tam-long-nhan-ai/vo-chong-khiem-thi-mong-ban-doc-giup-do-be-gai-sinh-non-20250103111843871.htm" target="_blank">Vợ chồng khiếm thị mong bạn đọc giúp đỡ bé gái sinh non</a></div><div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/ban-doc-giup-do-chang-trai-mo-coi-gan-350-trieu-dong-chua-benh-hiem-ngheo-20250103122639105.htm"><img alt="Bạn đọc giúp đỡ chàng trai mồ côi gần 350 triệu đồng chữa bệnh hiểm nghèo" src="https://cdnphoto.dantri.com.vn/T-_VOfajnjpwkkRZGYlKphpuiMM=/zoom/1200_630/2025/01/03/bachmaihuonghong1-crop-1735881884786.jpeg"/><a href="https://dantri.com.vn/tam-long-nhan-ai/ban-doc-giup-do-chang-trai-mo-coi-gan-350-trieu-dong-chua-benh-hiem-ngheo-20250103122639105.htm" target="_blank">Bạn đọc giúp đỡ chàng trai mồ côi gần 350 triệu đồng chữa bệnh hiểm nghèo</a></div><div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/thong-bao-ket-chuyen-nhan-ai-tuan-3-thang-122024-20250103160814555.htm"><img alt="Thông báo kết chuyển Nhân ái tuần 3 tháng 12/2024" src="https://cdnphoto.dantri.com.vn/Y-RqSDTOsdEp78_fW1kU-HyyI18=/zoom/1200_630/2024/12/22/logo-crop-crop-1734860998649.jpeg"/><a href="https://dantri.com.vn/tam-long-nhan-ai/thong-bao-ket-chuyen-nhan-ai-tuan-3-thang-122024-20250103160814555.htm" target="_blank">Thông báo kết chuyển Nhân ái tuần 3 tháng 12/2024</a></div><div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/danh-sach-ban-doc-ung-ho-tuan-3-thang-122024-20250103160349183.htm"><img alt="Danh sách bạn đọc ủng hộ tuần 3 tháng 12/2024" src="https://cdnphoto.dantri.com.vn/Y-RqSDTOsdEp78_fW1kU-HyyI18=/zoom/1200_630/2024/12/22/logo-crop-crop-1734860998649.jpeg"/><a href="https://dantri.com.vn/tam-long-nhan-ai/danh-sach-ban-doc-ung-ho-tuan-3-thang-122024-20250103160349183.htm" target="_blank">Danh sách bạn đọc ủng hộ tuần 3 tháng 12/2024</a></div><div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/nguoi-phu-nu-song-trong-so-hai-vi-benh-tat-bao-gio-gia-dinh-em-het-kho-20250102081554266.htm"><img alt='Người phụ nữ sống trong sợ hãi vì bệnh tật: "Bao giờ gia đình em hết khổ?"' src="https://cdnphoto.dantri.com.vn/Q_BGUAZ04fsWamQlSOPNjvXnsU0=/zoom/1200_630/2025/01/02/thainguyenhuonghong5-crop-1735780428555.jpeg"/><a href="https://dantri.com.vn/tam-long-nhan-ai/nguoi-phu-nu-song-trong-so-hai-vi-benh-tat-bao-gio-gia-dinh-em-het-kho-20250102081554266.htm" target="_blank">Người phụ nữ sống trong sợ hãi vì bệnh tật: "Bao giờ gia đình em hết khổ?"</a></div><div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/hoan-canh.htm"><a href="https://dantri.com.vn/tam-long-nhan-ai/hoan-canh.htm" target="_blank">Tin tức Việt Nam và quốc tế nóng, nhanh, cập nhật 24h</a></div><div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/nguoi-phu-nu-song-trong-so-hai-vi-benh-tat-bao-gio-gia-dinh-em-het-kho-5436.htm"><img alt='Người phụ nữ sống trong sợ hãi vì bệnh tật: "Bao giờ gia đình em hết khổ?"' src="https://cdnphoto.dantri.com.vn/dlppGwYQn2vTqzxZ_shnQoCASNM=/zoom/1200_630/2025/01/02/thainguyenhuonghong3-crop-1735780835894.jpeg"/><a href="https://dantri.com.vn/tam-long-nhan-ai/nguoi-phu-nu-song-trong-so-hai-vi-benh-tat-bao-gio-gia-dinh-em-het-kho-5436.htm" target="_blank">Người phụ nữ sống trong sợ hãi vì bệnh tật: "Bao giờ gia đình em hết khổ?"</a></div><div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/chi-gai-bat-khoc-cuu-em-toi-voi-toi-chi-con-em-ay-la-nguoi-than-5435.htm"><img alt='Chị gái bật khóc: "Cứu em tôi với, tôi chỉ còn em ấy là người thân"' src="https://cdnphoto.dantri.com.vn/mb0zT_Kv4TaQKdWZoub6U4GQNw8=/zoom/1200_630/2024/12/28/phan-thi-nhancuu-em-trainghe-antrung-kien-edited-1735397993211.jpeg"/><a href="https://dantri.com.vn/tam-long-nhan-ai/chi-gai-bat-khoc-cuu-em-toi-voi-toi-chi-con-em-ay-la-nguoi-than-5435.htm" target="_blank">Chị gái bật khóc: "Cứu em tôi với, tôi chỉ còn em ấy là người thân"</a></div><div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/canh-co-cuc-cua-3-dua-tre-khong-bo-me-cam-diec-5434.htm"><img alt="Cảnh cơ cực của 3 đứa trẻ không bố, mẹ câm điếc" src="https://cdnphoto.dantri.com.vn/u5JoBIF5lklx-YvAerxxUS3TPe8=/zoom/1200_630/2024/12/20/3-dua-tre-khong-cha-song-cung-me-cam-diec-1-1734681669999.jpg"/><a href="https://dantri.com.vn/tam-long-nhan-ai/canh-co-cuc-cua-3-dua-tre-khong-bo-me-cam-diec-5434.htm" target="_blank">Cảnh cơ cực của 3 đứa trẻ không bố, mẹ câm điếc</a></div><div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/xay-dung-phong-hoc-dan-tri-240100.htm"><img alt="Xây dựng phòng học Dân trí" src="https://cdnphoto.dantri.com.vn/ldwY2MygkTTdiP2QDqWl-pO3csk=/zoom/1200_630/2024/12/31/1-1735646399941.jpg"/><a href="https://dantri.com.vn/tam-long-nhan-ai/xay-dung-phong-hoc-dan-tri-240100.htm" target="_blank">Xây dựng phòng học Dân trí</a></div></div>
+<div class="right-column">
+<h2>Nhà Tài Trợ</h2>
+<div class="item" src="images\236.png">
+<a href="#">Nhà tài trợ 236- Hùng Vương- TP Kon Tum</a>
+</div>
+<div class="item"> src="images\sen.png"&gt;
+        <a href="#">Công ty TNHH Bê Tông và xây lắp công nghiệp Kon Tum</a>
+</div>
+</div>
+</div>
+<footer>
+    © 2024 Tấm Lòng Nhân Ái
+</footer>
+<script>
+    // Gắn sự kiện cho nút "Chuyển bài viết"
+    const submitButton = document.getElementById('submit-button');
+    if (submitButton) {
+        submitButton.addEventListener('click', () => {
+            // Thu thập ID bài viết được chọn
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+            const selectedIds = Array.from(checkboxes).map(checkbox => checkbox.value);
+
+            // Gửi yêu cầu POST để lưu các bài viết đã chọn
+            fetch('/save_selection', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ selected: selectedIds }),
+            })
+            .then(response => response.text())
+            .then(data => {
+                alert(data); // Hiển thị thông báo thành công
+                location.reload(); // Tải lại trang để cập nhật giao diện
+            })
+            .catch(error => {
+                console.error('Lỗi:', error);
+                alert('Có lỗi xảy ra, vui lòng thử lại!');
+            });
+        });
+    }
+</script>
+</body>
+</html>

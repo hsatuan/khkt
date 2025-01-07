@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tấm Lòng Nhân Ái</title>
+<style>
+        body {
+                font-family: sans-serif;
+                margin: 0;
+                line-height: 1.6;
+                padding-bottom: 60px;
+                font-size: 1em;
+        }
+        header {
+            background-color: #0fad6c;
+            padding: 10px;
+            text-align: center;
+        }
+        header h1 { /* Định dạng riêng cho thẻ h1 trong header */
+            font-size: 3em; /* Kích thước chữ lớn hơn cho tiêu đề header (3 lần kích thước font body) */
+            padding: 10px;
+            color: rgb(226, 247, 46);
+        }
+        h1 {
+            font-size: 3em;
+            text-align: center; /* Canh giữa tiêu đề */
+            color: rgb(226, 247, 46);
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr; /* 2 cột bên trái và 1 cột bên phải */
+            grid-gap: 20px;
+            padding: 20px;
+        }
+
+        .left-columns {
+            display: grid;
+            grid-template-columns: 2fr 2fr; /* Chia cột trái thành 2 cột */
+            grid-gap: 10px;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            overflow: hidden;
+            margin-bottom: 10px;
+            padding: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .item:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 4px rgba(0,0,0,.2);
+        }
+
+        .item input[type="checkbox"] {
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .item img {
+            max-width: 100px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .item a {
+            flex-grow: 1;
+            padding: 5px; /* Giảm padding cho link */
+            text-align: left;
+            background-color: transparent;
+            color: blue;
+            font-size: 1em;
+            text-decoration: none; /* Loại bỏ gạch chân mặc định của link */
+        }
+
+        .item:hover a {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        #submitBtn {
+            position: fixed; /* Giữ nút ở một vị trí cố định trên màn hình */
+            bottom: 20px; /* Cách đáy màn hình 20px */
+            left: 50%; /* Canh giữa theo chiều ngang */
+            transform: translateX(-50%); /* Dịch chuyển nút sang trái 50% chiều rộng của nó để canh giữa chính xác */
+            padding: 10px 20px; /* Thêm padding cho nút */
+            background-color: #007bff; /* Màu nền */
+            color: white; /* Màu chữ */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+
+        #submitBtn:hover {
+            background-color: #0056b3;
+        }
+
+        footer{
+            position:fixed;
+            bottom:0;
+            width:100%;
+        }
+        
+    </style>
+</head>
+<body>
+<header>
+<h1>Tấm Lòng Nhân Ái</h1>
+</header>
+<div class="container">
+<form action="/save_selected" id="urlForm" method="POST"><div class="left-columns">
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/hon-140-trieu-dong-den-voi-nguoi-dan-ba-di-cay-lua-thue-bi-tai-nan-20241216093338091.htm"><input name="url" type="checkbox" value="https://dantri.com.vn/tam-long-nhan-ai/hon-140-trieu-dong-den-voi-nguoi-dan-ba-di-cay-lua-thue-bi-tai-nan-20241216093338091.htm"/>
+<img alt="Ảnh 1" src="https://cdnphoto.dantri.com.vn/vMHS9pXKJ8ccGiwtrKEje7ofxOk=/2024/12/16/1000108061-edited-1734315582596.jpeg"/>
+<a href="#">Hơn 140 triệu đồng đến với người đàn bà đi cấy lúa thuê bị tai nạn</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/ban-doc-bao-dan-tri-giup-do-hoan-canh-chong-muon-nha-lam-le-tang-cho-vo-20241219091814215.htm"><input name="url" type="checkbox" value="https://dantri.com.vn/tam-long-nhan-ai/ban-doc-bao-dan-tri-giup-do-hoan-canh-chong-muon-nha-lam-le-tang-cho-vo-20241219091814215.htm"/>
+<img alt="Ảnh 2" src="https://cdnphoto.dantri.com.vn/BVw1XgYpK99hB1ijziUqJE6m8ns=/thumb_w/1020/2024/12/19/img6885-1734574460222.jpg?watermark=true"/>
+<a href="#">Bạn đọc báo Dân trí giúp đỡ hoàn cảnh chồng mượn nhà làm lễ tang cho vợ</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/tham-hoa-lang-nu-ca-thon-bi-xoa-so-hay-chung-tay-gop-suc-xay-lai-mai-am-240502.htm"><input name="url" type="checkbox" value="https://dantri.com.vn/tam-long-nhan-ai/tham-hoa-lang-nu-ca-thon-bi-xoa-so-hay-chung-tay-gop-suc-xay-lai-mai-am-240502.htm"/>
+<img alt="Ảnh 3" src="https://cdnphoto.dantri.com.vn/apih1miltTyTpRBx5JrjRc3ins0=/zoom/1152_768/2024/09/11/anh-thoi-crop-1726028448274-1726041671298.jpeg"/>
+<a href="#">Thảm họa Làng Nủ: Cả thôn bị xóa sổ - Hãy chung tay góp sức xây lại mái ấm!</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/hon-140-trieu-dong-den-voi-nguoi-dan-ba-di-cay-lua-thue-bi-tai-nan-20241216093338091.htm"><input name="url" type="checkbox" value="https://dantri.com.vn/tam-long-nhan-ai/hon-140-trieu-dong-den-voi-nguoi-dan-ba-di-cay-lua-thue-bi-tai-nan-20241216093338091.htm"/>
+<img alt="Ảnh 1" src="https://cdnphoto.dantri.com.vn/vMHS9pXKJ8ccGiwtrKEje7ofxOk=/2024/12/16/1000108061-edited-1734315582596.jpeg"/>
+<a href="#">Hơn 140 triệu đồng...</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/ban-doc-bao-dan-tri-giup-do-hoan-canh-chong-muon-nha-lam-le-tang-cho-vo-20241219091814215.htm"><input name="url" type="checkbox" value="https://dantri.com.vn/tam-long-nhan-ai/ban-doc-bao-dan-tri-giup-do-hoan-canh-chong-muon-nha-lam-le-tang-cho-vo-20241219091814215.htm"/>
+<img alt="Ảnh 2" src="https://cdnphoto.dantri.com.vn/BVw1XgYpK99hB1ijziUqJE6m8ns=/thumb_w/1020/2024/12/19/img6885-1734574460222.jpg?watermark=true"/>
+<a href="#">Chồng muốn nhà...</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/tham-hoa-lang-nu-ca-thon-bi-xoa-so-hay-chung-tay-gop-suc-xay-lai-mai-am-240502.htm"><input name="url" type="checkbox" value="https://dantri.com.vn/tam-long-nhan-ai/tham-hoa-lang-nu-ca-thon-bi-xoa-so-hay-chung-tay-gop-suc-xay-lai-mai-am-240502.htm"/>
+<img alt="Ảnh 3" src="https://cdnphoto.dantri.com.vn/apih1miltTyTpRBx5JrjRc3ins0=/zoom/1152_768/2024/09/11/anh-thoi-crop-1726028448274-1726041671298.jpeg"/>
+<a href="#">Thảm họa làng...</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/nhoi-long-vo-1-nach-2-con-mon-xoay-xo-cham-chong-liet-tu-chi-20241214001517873.htm"><input name="url" type="checkbox" value="https://dantri.com.vn/tam-long-nhan-ai/nhoi-long-vo-1-nach-2-con-mon-xoay-xo-cham-chong-liet-tu-chi-20241214001517873.htm"/>
+<a href="https://dantri.com.vn/tam-long-nhan-ai/nhoi-long-vo-1-nach-2-con-mon-xoay-xo-cham-chong-liet-tu-chi-20241214001517873.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/nhoi-long-vo-1-nach-2-con-mon-xoay-xo-cham-chong-liet-tu-chi-20241214001517873.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/xot-thuong-canh-nguoi-vo-ngheo-bat-luc-xin-tung-ly-sua-cuu-chong-20241218173454569.htm"><input name="url" type="checkbox" value="https://dantri.com.vn/tam-long-nhan-ai/xot-thuong-canh-nguoi-vo-ngheo-bat-luc-xin-tung-ly-sua-cuu-chong-20241218173454569.htm"/>
+<a href="https://dantri.com.vn/tam-long-nhan-ai/xot-thuong-canh-nguoi-vo-ngheo-bat-luc-xin-tung-ly-sua-cuu-chong-20241218173454569.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/xot-thuong-canh-nguoi-vo-ngheo-bat-luc-xin-tung-ly-sua-cuu-chong-20241218173454569.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/nguoi-me-truoc-khi-chet-mong-duoc-thay-con-gai-tu-cham-soc-minh-20241212110141339.htm"><input name="url" type="checkbox" value="https://dantri.com.vn/tam-long-nhan-ai/nguoi-me-truoc-khi-chet-mong-duoc-thay-con-gai-tu-cham-soc-minh-20241212110141339.htm"/>
+<a href="https://dantri.com.vn/tam-long-nhan-ai/nguoi-me-truoc-khi-chet-mong-duoc-thay-con-gai-tu-cham-soc-minh-20241212110141339.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/nguoi-me-truoc-khi-chet-mong-duoc-thay-con-gai-tu-cham-soc-minh-20241212110141339.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/goa-phu-ngheo-gong-ganh-3-con-va-bo-me-chong-cuoc-doi-nhoc-nhan-don-dau-20241221235905944.htm"><input name="url" type="checkbox" value="https://dantri.com.vn/tam-long-nhan-ai/goa-phu-ngheo-gong-ganh-3-con-va-bo-me-chong-cuoc-doi-nhoc-nhan-don-dau-20241221235905944.htm"/>
+<a href="https://dantri.com.vn/tam-long-nhan-ai/goa-phu-ngheo-gong-ganh-3-con-va-bo-me-chong-cuoc-doi-nhoc-nhan-don-dau-20241221235905944.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/goa-phu-ngheo-gong-ganh-3-con-va-bo-me-chong-cuoc-doi-nhoc-nhan-don-dau-20241221235905944.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/goa-phu-ngheo-gong-ganh-3-con-va-bo-me-chong-cuoc-doi-nhoc-nhan-don-dau-20241221235905944.htm"><input name="url" type="checkbox" value="https://dantri.com.vn/tam-long-nhan-ai/goa-phu-ngheo-gong-ganh-3-con-va-bo-me-chong-cuoc-doi-nhoc-nhan-don-dau-20241221235905944.htm"/>
+<a href="https://dantri.com.vn/tam-long-nhan-ai/goa-phu-ngheo-gong-ganh-3-con-va-bo-me-chong-cuoc-doi-nhoc-nhan-don-dau-20241221235905944.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/goa-phu-ngheo-gong-ganh-3-con-va-bo-me-chong-cuoc-doi-nhoc-nhan-don-dau-20241221235905944.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/nguoi-phu-nu-ung-thu-giai-doan-cuoi-da-qua-doi-2-con-mo-coi-ca-cha-lan-me-20241226111616397.htm"><input name="url" type="checkbox" value="https://dantri.com.vn/tam-long-nhan-ai/nguoi-phu-nu-ung-thu-giai-doan-cuoi-da-qua-doi-2-con-mo-coi-ca-cha-lan-me-20241226111616397.htm"/>
+<a href="https://dantri.com.vn/tam-long-nhan-ai/nguoi-phu-nu-ung-thu-giai-doan-cuoi-da-qua-doi-2-con-mo-coi-ca-cha-lan-me-20241226111616397.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/nguoi-phu-nu-ung-thu-giai-doan-cuoi-da-qua-doi-2-con-mo-coi-ca-cha-lan-me-20241226111616397.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/goa-phu-ngheo-khon-cung-nuoi-3-con-tam-than-me-gia-om-yeu-20241213160402877.htm"><input name="url" type="checkbox" value="https://dantri.com.vn/tam-long-nhan-ai/goa-phu-ngheo-khon-cung-nuoi-3-con-tam-than-me-gia-om-yeu-20241213160402877.htm"/>
+<a href="https://dantri.com.vn/tam-long-nhan-ai/goa-phu-ngheo-khon-cung-nuoi-3-con-tam-than-me-gia-om-yeu-20241213160402877.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/goa-phu-ngheo-khon-cung-nuoi-3-con-tam-than-me-gia-om-yeu-20241213160402877.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/nho-dan-tri-ma-toi-co-nha-moi-don-tet-sau-hon-chuc-nam-nha-dot-cot-xieu-20241224142703284.htm"><input name="url" type="checkbox" value="https://dantri.com.vn/tam-long-nhan-ai/nho-dan-tri-ma-toi-co-nha-moi-don-tet-sau-hon-chuc-nam-nha-dot-cot-xieu-20241224142703284.htm"/>
+<a href="https://dantri.com.vn/tam-long-nhan-ai/nho-dan-tri-ma-toi-co-nha-moi-don-tet-sau-hon-chuc-nam-nha-dot-cot-xieu-20241224142703284.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/nho-dan-tri-ma-toi-co-nha-moi-don-tet-sau-hon-chuc-nam-nha-dot-cot-xieu-20241224142703284.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/xot-thuong-canh-cau-be-chuan-bi-hien-tuy-cuu-anh-bat-ngo-gap-nan-nguy-kich-20241223155505087.htm"><input name="url" type="checkbox" value="https://dantri.com.vn/tam-long-nhan-ai/xot-thuong-canh-cau-be-chuan-bi-hien-tuy-cuu-anh-bat-ngo-gap-nan-nguy-kich-20241223155505087.htm"/>
+<a href="https://dantri.com.vn/tam-long-nhan-ai/xot-thuong-canh-cau-be-chuan-bi-hien-tuy-cuu-anh-bat-ngo-gap-nan-nguy-kich-20241223155505087.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/xot-thuong-canh-cau-be-chuan-bi-hien-tuy-cuu-anh-bat-ngo-gap-nan-nguy-kich-20241223155505087.htm</a>
+</div>
+<div class="item" data-url="https://dantri.com.vn/tam-long-nhan-ai/hanh-trinh-tuoi-tre-mang-tet-som-den-dong-bao-vung-cao-20241223181653658.htm"><input name="url" type="checkbox" value="https://dantri.com.vn/tam-long-nhan-ai/hanh-trinh-tuoi-tre-mang-tet-som-den-dong-bao-vung-cao-20241223181653658.htm"/>
+<a href="https://dantri.com.vn/tam-long-nhan-ai/hanh-trinh-tuoi-tre-mang-tet-som-den-dong-bao-vung-cao-20241223181653658.htm" target="_blank">https://dantri.com.vn/tam-long-nhan-ai/hanh-trinh-tuoi-tre-mang-tet-som-den-dong-bao-vung-cao-20241223181653658.htm</a>
+</div>
+</div></form>
+<div class="right-column">
+<h2>Nhà Tài Trợ</h2>
+<div class="item" src="images\236.png">
+<a href="#">Nhà tài trợ 236- Hùng Vương- TP Kon Tum</a>
+</div>
+<div class="item"> src="images\sen.png"&gt;
+<a href="#">Công ty TNHH Bê Tông và xây lắp công nghiệp Kon Tum</a>
+</div>
+</div>
+</div>
+<footer>
+        © 2024 Tấm Lòng Nhân Ái
+    </footer>
+<script>
+        const items = document.querySelectorAll('.item');
+        items.forEach(item => {
+            item.addEventListener('click', () => {
+                const url = item.dataset.url;
+                window.open(url, '_blank');
+            });
+        });
+    </script>
+<button id="submitBtn" type="button">Transfer Selected</button><script>
+        document.getElementById('submitBtn').addEventListener('click', () => {
+            const selectedUrls = Array.from(document.querySelectorAll('input[name="url"]:checked'))
+                .map(checkbox => checkbox.value);
+
+            console.log('Selected URLs:', selectedUrls);
+
+            fetch('/save_selected', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ urls: selectedUrls })
+            }).then(response => {
+                if (response.ok) {
+                    alert('Selected URLs transferred to dich.html successfully!');
+                } else {
+                    alert('Error transferring URLs.');
+                }
+            });
+        });
+    </script></body>
+</html>
